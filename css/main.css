@@ -1,3 +1,21 @@
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: 
+       url("../fonts/open-sans-v20-latin-regular.woff2") format("woff2"),
+       url("../fonts/open-sans-v20-latin-regular.woff") format("woff"); 
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: 
+       url("../fonts/open-sans-v20-latin-700.woff2") format("woff2"), 
+       url("../fonts/open-sans-v20-latin-700.woff") format("woff"); 
+}
+
 * {
   box-sizing: border-box;
 }
@@ -6,6 +24,7 @@ body {
   padding: 0;
   margin: 0;
   font-size: 24px;
+  font-family: "Open Sans";
   line-height: 1.5;
 }
 
@@ -20,7 +39,8 @@ body {
 }
 
 .header {
-  padding-top: 20px;
+  padding: 0;
+  border-bottom: 1px solid #e1e1e1;
 }
 
 .header__navbar {
@@ -30,12 +50,14 @@ body {
 }
 
 .navbar {
-
+  
 }
 
 .navbar__logo {
   width: 40px;
   height: 40px;
+  padding: 0;
+  display: block;
 }
 
 .navbar__input {
@@ -46,11 +68,13 @@ body {
   border: 1px solid #e2e2e2;
   padding: 5px 20px;
   font-size: 14px;
+  font-family: "Open Sans";
 }
 
 .navbar__list {
   display: flex;
   list-style-type: none;
+  padding: 20px 0;
 }
 
 .nav__item {
@@ -59,6 +83,7 @@ body {
 
 .nav__link {
   font-size: 16px;
+  font-family: "Open Sans";
   text-decoration: none;
   color: #222222;
 }
@@ -125,6 +150,7 @@ body {
   text-decoration: none;
   color: #222222;
   font-size: 14px;
+  font-family: "Open Sans";
 }
 
 .main {
@@ -165,12 +191,14 @@ main {
 .user__name {
   text-align: center;
   font-size: 20px;
+  font-family: "Open Sans";
   font-weight: 700;
 }
 
 .user__founder {
   text-align: center;
   font-size: 18px;
+  font-family: "Open Sans";
   color: #222222;
   margin-top: -20px;
 }
@@ -178,6 +206,7 @@ main {
 .user__located {
   text-align: center;
   font-size: 18px;
+  font-family: "Open Sans";
   color: #222222;
   opacity: 60%;
   margin-top: -20px;
@@ -193,6 +222,7 @@ main {
   padding: 5px 10px;
   border: 1px solid #e2e2e2;
   font-size: 20px;
+  font-family: "Open Sans";
   text-align: center;
   border-color: rgb(72, 159, 240);
   color: rgb(72, 159, 240);
@@ -229,17 +259,28 @@ main {
 
 .follow__connecting {
   width: 100px;
-  margin-right: 20px;
+  padding: 20px;
+  border: 1px solid #e1e1e1;
+  border-left-color: transparent;
+}
+
+.follow__followers {
+  width: 100px;
+  padding: 20px;
+  border: 1px solid #e1e1e1;
+  border-right-color: transparent;
 }
 
 .follow__number {
   font-size: 18px;
+  font-family: "Open Sans";
   font-weight: 700;
 }
 
 .follow__subtext {
   color: #222222;
   font-size: 16px;
+  font-family: "Open Sans";
   opacity: 60%;
 }
 
@@ -289,6 +330,7 @@ main {
 .info__post-title {
   text-transform: uppercase;
   font-size: 22px;
+  font-family: "Open Sans";
   font-weight: 500;
   color: #222222;
 }
@@ -302,11 +344,17 @@ main {
   border-radius: 50%;
   padding: 5px 7px;
   cursor: pointer;
-  border: 1px solid #222222;
+  border: 1px solid #335ff0;
+}
+
+.info__post-icon:hover {
+  background-color: #d6d6d6;
+  opacity: 60%;
 }
 
 .info__post-icon:active {
   background-color: #d6d6d6;
+  opacity: 80%;
 }
 
 .info__list {
@@ -336,6 +384,7 @@ main {
 
 .info__date {
   font-size: 14px;
+  font-family: "Open Sans";
   color: #222222;
   opacity: 60%;
 }
@@ -361,7 +410,6 @@ main {
 
 .people__item {
   display: flex;
-  justify-content: space-around;
   align-items: center;
   margin-top: 10px;
 }
@@ -374,20 +422,21 @@ main {
 
 .people__info {
   width: 60px;
-  text-align: center;
 }
 
 .people__fullname {
   font-size: 16px;
   line-height: 1.2;
-  width: 100px;
+  width: 150px;
   color: #222222;
   font-weight: 700;
 }
 
 .people__company {
   line-height: 1.2;
+  margin-left: 40px;
   font-size: 14px;
+  font-family: "Open Sans";
   margin-top: -10px;
   color: #222222;
   opacity: 60%;
@@ -419,6 +468,7 @@ main {
   text-align: center;
   margin-left: 40px;
   font-size: 20px;
+  font-family: "Open Sans";
   font-weight: 700;
   line-height: 1;
   color: #222222;
@@ -432,14 +482,18 @@ main {
 
 .background__title {
   font-size: 14px;
+  font-family: "Open Sans";
   font-weight: 700;
   text-transform: uppercase;
   color: #222222;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e1e1e1;
 }
 
 .background__summary-title {
   color: #222222;
   font-size: 22px;
+  font-family: "Open Sans";
 }
 
 .background__summary-title::before {
@@ -451,6 +505,7 @@ main {
 
 .bakground__summary-text {
   font-size: 14px;
+  font-family: "Open Sans";
   margin-left: 30px;
   width: 500px;
   color: #222222;
@@ -459,6 +514,7 @@ main {
 .summary__experience-title {
   color: #222222;
   font-size: 22px;
+  font-family: "Open Sans";
 }
 
 .summary__experience-title::before {
@@ -500,6 +556,7 @@ main {
   color: #222222;
   opacity: 60%;
   font-size: 14px;
+  font-family: "Open Sans";
 }
 
 .summary__position {
@@ -566,6 +623,7 @@ main {
 .summary__skills-title {
   color: #222222;
   font-size: 22px;
+  font-family: "Open Sans";
 }
 
 .summary__skills-title::before {
@@ -583,6 +641,7 @@ main {
 
 .skills__number {
   font-size: 22px;
+  font-family: "Open Sans";
   color: #222222;
   margin-right: 20px;
   border: 1px solid #222222;
@@ -615,6 +674,7 @@ main {
   cursor: pointer;
   color: #000000;
   font-size: 14px;
+  font-family: "Open Sans";
   font-weight: 700;
   position: relative;
   top: -5px;
@@ -628,6 +688,7 @@ main {
 .interests__title {
   color: #222222;
   font-size: 22px;
+  font-family: "Open Sans";
 }
 
 .interests__title::before {
@@ -643,6 +704,7 @@ main {
 
 .interests__item {
   font-size: 16px;
+  font-family: "Open Sans";
   color: #222222;
   margin-right: 30px;
   background-color: #d6d6d6;
@@ -672,6 +734,7 @@ main {
   border: 1px solid #e2e2e2;
   padding: 10px 15px;
   font-size: 16px;
+  font-family: "Open Sans";
   line-height: 1.1;
   color: #222222;
 }
@@ -679,7 +742,7 @@ main {
 .recommendations__trangle {
   position: absolute;
   left: 1px;
-  top: 222px;
+  top: 69.8%;
   border-color: #222222;
   border-top: 40px solid #ffffff;
   border-right: 45px solid transparent;
@@ -688,7 +751,7 @@ main {
 
 .recommendations__trangle-border {
   position: absolute;
-  top: 223px;
+  top: 70%;
   border-color: #222222;
   border-top: 44px solid #e2e2e2;
   border-right: 46px solid transparent;
@@ -712,12 +775,14 @@ main {
 
 .recommendations__name {
   font-size: 20px;
+  font-family: "Open Sans";
   font-weight: 500;
 }
 
 .recommendations__company {
   margin-top: -20px;
   font-size: 16px;
+  font-family: "Open Sans";
   color: #222222;
   opacity: 60%;
 }
@@ -732,6 +797,9 @@ main {
 .following__title {
   text-transform: uppercase;
   font-size: 22px;
+  padding-bottom: 10px;
+  font-family: "Open Sans";
+  border-bottom: 1px solid #e1e1e1;
 }
 
 .following__list {
@@ -752,6 +820,7 @@ main {
 
 .following__text {
   font-size: 18px;
+  font-family: "Open Sans";
 }
 
 .following__follow-box {
@@ -760,6 +829,7 @@ main {
   text-align: center;
   margin-top: -10px;
   font-size: 18px;
+  font-family: "Open Sans";
 }
 
 .following__follow-icon {
@@ -767,6 +837,7 @@ main {
   cursor: pointer;
   font-size: 16px;
   border: 1px solid rgb(72, 159, 240);
+  color: rgb(72, 159, 240);
   padding: 0 10px;
   border-radius: 50%;
 }
@@ -785,6 +856,7 @@ main {
   background-color: #ffffff;
   outline: none;
   font-size: 18px;
+  font-family: "Open Sans";
   padding: 5px 30px;
   border-radius: 25px;
   cursor: pointer;
@@ -816,5 +888,6 @@ footer {
   margin-left: auto;
   margin-right: auto;
   font-size: 16px ;
+  font-family: "Open Sans";
   color: #222222;
 }
